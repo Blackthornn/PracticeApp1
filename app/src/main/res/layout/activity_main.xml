@@ -49,6 +49,44 @@
             android:layout_height="50dp" app:srcCompat="@drawable/inboxbutton"
             android:id="@+id/imageView5"
             app:layout_constraintStart_toEndOf="@+id/imageView4" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/logo"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline"
+                                          app:layout_constraintGuide_percent="0.5"
+                                          android:orientation="vertical"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/dataimage"
+            android:id="@+id/topLeftIpadImageView"
+            android:scaleType="centerCrop" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline" android:layout_marginRight="8dp"
+            app:layout_constraintDimensionRatio="1:1"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/imagesimage"
+            android:id="@+id/topRightManImageView"
+            android:scaleType="centerCrop" app:layout_constraintStart_toStartOf="@+id/guideline"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/topLeftIpadImageView" app:layout_constraintDimensionRatio="1:1"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/videosimage"
+            android:id="@+id/bottomLeftImageView"
+            android:scaleType="centerCrop" app:layout_constraintEnd_toStartOf="@+id/guideline"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/topLeftIpadImageView"
+            app:layout_constraintStart_toStartOf="@+id/topLeftIpadImageView" app:layout_constraintDimensionRatio="1:1"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/codeimage"
+            android:id="@+id/bottomRightImageView"
+            android:scaleType="centerCrop" app:layout_constraintStart_toStartOf="@+id/guideline"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/topRightManImageView"
+            app:layout_constraintEnd_toEndOf="@+id/topRightManImageView"
+            app:layout_constraintDimensionRatio="1:1"/>
 </android.support.constraint.ConstraintLayout>
